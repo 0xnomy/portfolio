@@ -61,17 +61,6 @@ export default function RootLayout({ children }) {
                 <Navbar />
                 {children}
                 <Footer />
-                <script src="https://unpkg.com/feather-icons"></script>
-                <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            if (typeof feather !== 'undefined') {
-                                feather.replace({ width: 16, height: 16 });
-                            }
-                        `,
-                    }}
-                />
             </body>
         </html>
     );
