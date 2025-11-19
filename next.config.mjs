@@ -2,10 +2,17 @@
 const nextConfig = {
     images: {
         unoptimized: false,
+        remotePatterns: [],
+        formats: ['image/avif', 'image/webp'],
     },
-    // Disable static generation warnings for development
     reactStrictMode: true,
     swcMinify: true,
+    output: 'standalone',
+    trailingSlash: false,
+    skipTrailingSlashRedirect: false,
+    poweredByHeader: false,
+    compress: true,
+    generateEtags: true,
 }
 
 export default nextConfig
